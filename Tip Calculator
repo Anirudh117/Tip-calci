@@ -1,0 +1,13 @@
+print("Welcome Guys to tip calculator!!")
+bill = float(input("What was the total bill? Rs."))
+tip = int(input("What percentage of tip you wanted to give?"))
+split = input("Do you want to split?(yes/no):  ")
+amount = tip / 100 * bill + bill
+if(split.lower() == "yes"):
+    people = int(input("How many are there with you  "))
+    total_amount = amount / people
+    print(f"The amount for each person is {total_amount}")
+else:
+    print(f"The amount you need to pay is{amount}")
+
+print("Hope you got clarified, Thank you Buddy!!")         
